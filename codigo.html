@@ -1,1 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio Profesional | Marcos Rodríguez Fernández</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    code, pre { font-family: 'Fira Code', monospace; }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-blue-500 selection:text-white">
 
+  <!-- Navegación Header -->
+  <header class="sticky top-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center space-x-3">
+          <span class="text-blue-500 font-mono text-xl font-bold">&lt;MR /&gt;</span>
+          <span class="font-bold text-lg tracking-tight">Marcos Rodríguez</span>
+        </div>
+        <nav class="hidden md:flex space-x-6 text-sm font-medium text-slate-300">
+          <a href="#sobre-mi" class="hover:text-blue-400 transition">Sobre Mí</a>
+          <a href="#competencias" class="hover:text-blue-400 transition">Competencias</a>
+          <a href="#proyectos" class="hover:text-blue-400 transition">Proyectos</a>
+          <a href="#certificaciones" class="hover:text-blue-400 transition">Certificaciones</a>
+          <a href="#experiencia" class="hover:text-blue-400 transition">Experiencia</a>
+          <a href="#contacto" class="hover:text-blue-400 transition">Contacto</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero / Presentación -->
+  <section id="sobre-mi" class="py-20 border-b border-slate-800/60 bg-gradient-to-b from-slate-900 to-slate-950">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
+        <div class="md:col-span-2 space-y-6">
+          <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-mono">
+            <span class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
+            <span>Disponible para incorporación inmediata</span>
+          </div>
+          <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-white">
+            Marcos Rodríguez Fernández
+          </h1>
+          <p class="text-lg sm:text-xl text-slate-300 font-medium">
+            Técnico en Sistemas Microinformáticos y Redes (SMR) | Estudiante de GS ASIR
+          </p>
+          <p class="text-slate-400 leading-relaxed max-w-2xl">
+            Apasionado por la infraestructura tecnológica, la administración de servidores, el diseño de redes avanzadas, la ciberseguridad y la automatización. Me caracterizo por ser proactivo, enfocado al trabajo en equipo y con habilidades de coordinación técnica y gestión de personal.
+          </p>
+          <div class="flex flex-wrap gap-4 pt-2">
+            <a href="mailto:marcossrofer@gmail.com" class="inline-flex items-center space-x-2 bg-blue-600 hover:bg-blue-500 text-white px-5 py-2.5 rounded-lg font-medium transition shadow-lg shadow-blue-600/20">
+              <i class="fa-regular fa-envelope"></i>
+              <span>Contactar</span>
+            </a>
+            <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 bg-slate-800 hover:bg-slate-700 text-slate-200 px-5 py-2.5 rounded-lg font-medium border border-slate-700 transition">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Tarjeta de Datos Rápidos -->
+        <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 shadow-xl space-y-4">
+          <h3 class="text-xs font-mono uppercase tracking-wider text-slate-400 border-b border-slate-800 pb-2">Información Relevante</h3>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-center text-slate-300">
+              <i class="fa-solid fa-location-dot w-6 text-blue-400"></i>
+              <span>Getafe / Madrid, España</span>
+            </li>
+            <li class="flex items-center text-slate-300">
+              <i class="fa-solid fa-graduation-cap w-6 text-blue-400"></i>
+              <span>GS ASIR (DIGITECH)</span>
+            </li>
+            <li class="flex items-center text-slate-300">
+              <i class="fa-solid fa-certificate w-6 text-blue-400"></i>
+              <span>GM SMR (MEDAC)</span>
+            </li>
+            <li class="flex items-center text-slate-300">
+              <i class="fa-solid fa-soccer-ball w-6 text-blue-400"></i>
+              <span>Director Técnico UEFA C (Licencia EPR)</span>
+            </li>
+            <li class="flex items-center text-slate-300">
+              <i class="fa-solid fa-language w-6 text-blue-400"></i>
+              <span>Español (Nativo) | Inglés B1 / Técnico</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Competencias Técnicas -->
+  <section id="competencias" class="py-16 border-b border-slate-800/60">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-bold text-white mb-8 flex items-center">
+        <i class="fa-solid fa-code text-blue-500 mr-3"></i> Competencias Técnicas
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
