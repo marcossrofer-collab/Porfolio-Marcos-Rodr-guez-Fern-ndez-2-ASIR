@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marcos Rodríguez Fernández · Portfolio</title>
+  <meta name="description" content="Portfolio de Marcos Rodríguez Fernández, técnico en Sistemas Microinformáticos y Redes y estudiante de ASIR. Prácticas de redes, sistemas y ciberseguridad.">
+  <meta name="theme-color" content="#0b1220">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1220'/%3E%3Cpath d='M14 44V20l18 16 18-16v24' fill='none' stroke='%232dd4bf' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    // Aplica el tema guardado antes de pintar para evitar parpadeos
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#proyectos">Saltar al contenido</a>
+
+  <header class="nav" id="top">
+    <div class="wrap nav__in">
+      <a class="brand" href="#top" aria-label="Inicio"><span class="brand__mark">MR</span><span class="brand__name">Marcos Rodríguez</span></a>
+      <nav class="menu" aria-label="Principal">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#certificaciones">Certificaciones</a>
+        <a href="#trayectoria">Trayectoria</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <button class="theme" id="themeBtn" type="button" aria-label="Cambiar entre tema claro y oscuro">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9c0-.5-.05-1-.14-1.5A6 6 0 0 1 13.5 3.14 9 9 0 0 0 12 3z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero__in">
+        <div class="hero__text">
+          <p class="eyebrow"><span class="dot"></span> Disponible para prácticas y primer empleo en TI</p>
+          <h1>Marcos Rodríguez <span class="accent">Fernández</span></h1>
+          <p class="role">Técnico en Sistemas Microinformáticos y Redes <span class="sep">/</span> Estudiante de ASIR</p>
+          <p class="lead">Me apasiona la infraestructura tecnológica: redes, administración de sistemas y ciberseguridad. Aquí reúno las prácticas y proyectos que he ido construyendo durante mi formación.</p>
+          <div class="cta">
+            <a class="btn btn--primary" href="#proyectos">Ver proyectos</a>
+            <a class="btn" href="#contacto">Contactar</a>
+          </div>
+          <ul class="facts" aria-label="Datos rápidos">
+            <li><strong>11</strong><span>prácticas y proyectos</span></li>
+            <li><strong>12</strong><span>cursos y certificaciones</span></li>
+            <li><strong>2</strong><span>ciclos formativos</span></li>
+          </ul>
+        </div>
+
+        <!-- Terminal decorativa -->
+        <div class="term" aria-hidden="true">
+          <div class="term__bar"><i></i><i></i><i></i><span>marcos@lab ~ </span></div>
+          <pre class="term__body"><span class="c-dim">$</span> whoami
+marcos · SMR + ASIR
+<span class="c-dim">$</span> ip -br addr
+eth0   UP   192.168.10.2/24
+vlan2  UP   192.168.2.1/24
+vlan3  UP   192.168.3.1/24
+<span class="c-dim">$</span> ping -c1 servidor.local
+64 bytes: <span class="c-ok">time=0.4 ms</span>
+<span class="c-dim">$</span> <span class="cursor"></span></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section class="section" id="sobre-mi">
+      <div class="wrap">
+        <header class="sec-head"><p class="kicker">01 · Sobre mí</p><h2>Redes, sistemas y ganas de aprender</h2></header>
+        <div class="about">
+          <div class="about__text">
+            <p>Soy técnico en Sistemas Microinformáticos y Redes y actualmente curso el Grado Superior en Administración de Sistemas Informáticos en Red (ASIR). Me interesan la infraestructura tecnológica, la administración de redes, el diseño web y la resolución de incidencias.</p>
+            <p>Soy una persona proactiva y de equipo, con experiencia en atención directa al cliente y coordinación técnica. Fuera de la informática entreno a grupos de fútbol base, algo que me ha enseñado a explicar ideas complejas con claridad y a mantener la calma en entornos dinámicos.</p>
+            <p>Busco una oportunidad para aportar mis conocimientos en TI y seguir creciendo en el sector.</p>
+          </div>
+          <dl class="about__card">
+            <div><dt>Ubicación</dt><dd>Getafe, Madrid</dd></div>
+            <div><dt>Estudios</dt><dd>GS ASIR · Instituto DIGITECH</dd></div>
+            <div><dt>Idiomas</dt><dd>Español · Inglés B1 (técnico)</dd></div>
+            <div><dt>Intereses</dt><dd>Redes, ciberseguridad, virtualización, IA</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section class="section section--alt" id="proyectos">
+      <div class="wrap">
+        <header class="sec-head"><p class="kicker">02 · Proyectos y prácticas</p><h2>Lo que he construido</h2>
+          <p class="sec-sub">Prácticas del ciclo de SMR y del primer curso de ASIR. Cada una tiene su documentación en PDF; las de Packet Tracer incluyen el archivo <code>.pkt</code> para abrirlo y probarlo.</p></header>
+
+        <div class="filters" role="group" aria-label="Filtrar proyectos">
+          <button class="chip is-on" data-filter="all" type="button">Todos</button>
+          <button class="chip" data-filter="redes" type="button">Redes</button>
+          <button class="chip" data-filter="sistemas" type="button">Sistemas</button>
+          <button class="chip" data-filter="seguridad" type="button">Seguridad</button>
+          <button class="chip" data-filter="desarrollo" type="button">Desarrollo</button>
+        </div>
+
+        <div class="grid" id="grid">
+
+          <article class="card card--feat" data-cat="redes">
+            <div class="card__top"><span class="tag">Redes</span><span class="meta">1º ASIR · Trabajo 3ª evaluación</span></div>
+            <h3>Red corporativa con VLAN, VLSM y telefonía IP</h3>
+            <p>Diseño e implementación en Packet Tracer de la red de una empresa con más de 100 puestos repartidos en 8 departamentos: segmentación por VLAN, direccionamiento VLSM, enrutamiento inter-VLAN con switch de capa 3, router 2811 con rutas estáticas y telefonía IP con Cisco Unified CME. Verificada con pruebas ICMP entre PCs y teléfonos.</p>
+            <ul class="stack"><li>Packet Tracer</li><li>VLAN</li><li>VLSM</li><li>Switch L3</li><li>Cisco CME</li><li>Rutas estáticas</li></ul>
+            <div class="links"><a href="docs/practicas/asir-red-corporativa-vlan-voip.pdf" target="_blank" rel="noopener">Ver documentación (PDF)</a></div>
+          </article>
+
+          <article class="card" data-cat="redes seguridad">
+            <div class="card__top"><span class="tag">Redes</span><span class="meta">Packet Tracer</span></div>
+            <h3>VPN y listas de control de acceso (ACL)</h3>
+            <p>Práctica de seguridad en red con Cisco Packet Tracer: configuración de una VPN y filtrado de tráfico mediante listas de control de acceso.</p>
+            <ul class="stack"><li>Packet Tracer</li><li>VPN</li><li>ACL</li></ul>
+            <div class="links"><a href="docs/packet-tracer/vpn-listas-control-acceso.pkt" download>Descargar .pkt</a></div>
+          </article>
+
+          <article class="card" data-cat="redes">
+            <div class="card__top"><span class="tag">Redes</span><span class="meta">Packet Tracer</span></div>
+            <h3>Enrutamiento entre VLAN 2 y 3</h3>
+            <p>Comunicación entre redes virtuales distintas mediante enrutamiento inter-VLAN, comprobada con pruebas de conectividad entre equipos de cada VLAN.</p>
+            <ul class="stack"><li>Packet Tracer</li><li>VLAN</li><li>Inter-VLAN</li></ul>
+            <div class="links"><a href="docs/packet-tracer/enrutamiento-entre-vlan-2-3.pkt" download>Descargar .pkt</a></div>
+          </article>
+
+          <article class="card" data-cat="redes">
+            <div class="card__top"><span class="tag">Redes</span><span class="meta">Packet Tracer</span></div>
+            <h3>Ejercicio 2 · Enrutamiento</h3>
+            <p>Ejercicio práctico de encaminamiento entre varias redes con routers, configurando las rutas necesarias para que todos los equipos se vean entre sí.</p>
+            <ul class="stack"><li>Packet Tracer</li><li>Routing</li></ul>
+            <div class="links"><a href="docs/packet-tracer/ejercicio-2-enrutamiento.pkt" download>Descargar .pkt</a></div>
+          </article>
+
+          <article class="card" data-cat="redes">
+            <div class="card__top"><span class="tag">Redes</span><span class="meta">2º SMR · Sistemas en Red</span></div>
+            <h3>Redes inalámbricas con WPA2 Enterprise y RADIUS</h3>
+            <p>Despliegue de puntos de acceso y de una red WiFi con autenticación empresarial: servidor RADIUS con usuarios, DHCP, servidor web propio, salida a «Internet» simulada y redirección de puertos en el router.</p>
+            <ul class="stack"><li>WiFi</li><li>WPA2-Enterprise</li><li>RADIUS</li><li>DHCP</li><li>NAT / port forwarding</li></ul>
+            <div class="links"><a href="docs/practicas/smr-redes-inalambricas.pdf" target="_blank" rel="noopener">Ver documentación (PDF)</a></div>
+          </article>
+
+          <article class="card" data-cat="redes sistemas">
+            <div class="card__top"><span class="tag">Redes</span><span class="meta">2º SMR · Sistemas en Red</span></div>
+            <h3>Servicio DNS y transferencias de zona</h3>
+            <p>Análisis de escenarios reales de resolución de nombres, estudio de la jerarquía DNS, instalación del servicio, configuración de zonas y transferencia de zona entre servidores, con pruebas de funcionamiento. Trabajo en pareja.</p>
+            <ul class="stack"><li>DNS</li><li>Zonas</li><li>Servidor primario/secundario</li></ul>
+            <div class="links"><a href="docs/practicas/smr-servicio-dns.pdf" target="_blank" rel="noopener">Ver documentación (PDF)</a></div>
+          </article>
+
+          <article class="card" data-cat="sistemas">
+            <div class="card__top"><span class="tag">Sistemas</span><span class="meta">2º SMR · Sistemas en Red</span></div>
+            <h3>Laboratorio virtual: Windows 7, Ubuntu y servidor Ubuntu</h3>
+            <p>Montaje de tres máquinas virtuales en VirtualBox sobre una red interna, comprobación de conexiones, configuración de cada sistema y del firewall de Windows 7.</p>
+            <ul class="stack"><li>VirtualBox</li><li>Windows</li><li>Ubuntu Server</li><li>Firewall</li></ul>
+            <div class="links"><a href="docs/practicas/smr-virtualbox-windows-ubuntu.pdf" target="_blank" rel="noopener">Ver documentación (PDF)</a></div>
+          </article>
+
+          <article class="card" data-cat="sistemas redes">
+            <div class="card__top"><span class="tag">Sistemas</span><span class="meta">2º SMR · Sistemas en Red</span></div>
+            <h3>Centralita de Voz IP con FreePBX 17</h3>
+            <p>Instalación de Debian 12 en una máquina virtual, puesta en marcha y administración de FreePBX 17, y prueba de llamadas entre móvil y PC con el softphone Zoiper.</p>
+            <ul class="stack"><li>Debian 12</li><li>FreePBX 17</li><li>VoIP</li><li>Zoiper</li></ul>
+            <div class="links"><a href="docs/practicas/smr-voz-ip-freepbx.pdf" target="_blank" rel="noopener">Ver documentación (PDF)</a></div>
+          </article>
+
+          <article class="card" data-cat="sistemas seguridad">
+            <div class="card__top"><span class="tag">Sistemas</span><span class="meta">2º SMR · Seguridad Informática</span></div>
+            <h3>RAID por software en Windows y Linux</h3>
+            <p>Investigación de RAID 0, 1, 5 y 6; implementación práctica con el Administrador de discos de Windows y con <code>mdadm</code> en Linux; análisis comparativo de rendimiento y ventajas de RAID 0 frente a RAID 1; y una introducción a clústeres.</p>
+            <ul class="stack"><li>RAID</li><li>mdadm</li><li>Windows</li><li>Linux</li><li>Clusters</li></ul>
+            <div class="links"><a href="docs/practicas/smr-raid-almacenamiento.pdf" target="_blank" rel="noopener">Ver documentación (PDF)</a></div>
+          </article>
+
+          <article class="card" data-cat="seguridad redes">
+            <div class="card__top"><span class="tag">Seguridad</span><span class="meta">2º SMR · Seguridad Informática</span></div>
+            <h3>Hacking ético y monitorización de red</h3>
+            <p>Laboratorio en máquinas virtuales con Kali Linux: captura y análisis de tráfico con Wireshark, escaneo de redes con Nmap, auditoría de contraseñas con Hydra, una demostración de captura de credenciales en entorno controlado y recopilación de información con técnicas OSINT.</p>
+            <ul class="stack"><li>Kali Linux</li><li>Wireshark</li><li>Nmap</li><li>Hydra</li><li>OSINT</li></ul>
+            <div class="links"><a href="docs/practicas/smr-hacking-etico-monitorizacion.pdf" target="_blank" rel="noopener">Ver documentación (PDF)</a></div>
+          </article>
+
+          <article class="card" data-cat="desarrollo">
+            <div class="card__top"><span class="tag">Desarrollo</span><span class="meta">Proyecto final · Fundamentos de Hardware</span></div>
+            <h3>Gestor de archivos y panel de control en Python</h3>
+            <p>Aplicación de escritorio con Tkinter que explora directorios (buscar, crear, renombrar, mover y eliminar) y muestra en tiempo real el uso de CPU, RAM, disco libre, núcleos y batería con <code>psutil</code>. Proyecto en pareja.</p>
+            <ul class="stack"><li>Python</li><li>Tkinter</li><li>psutil</li></ul>
+            <div class="links"><a href="docs/practicas/smr-gestor-archivos-python.pdf" target="_blank" rel="noopener">Ver código (PDF)</a></div>
+          </article>
+
+        </div>
+        <p class="empty" id="empty" hidden>No hay proyectos en esta categoría.</p>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section class="section" id="habilidades">
+      <div class="wrap">
+        <header class="sec-head"><p class="kicker">03 · Habilidades</p><h2>Con qué trabajo</h2></header>
+        <div class="skills">
+          <article class="skill">
+            <h3>Sistemas y servidores</h3>
+            <p>Instalación, configuración y mantenimiento de Windows (Server, 10/11) y Linux (Ubuntu, Debian, CentOS, Red Hat).</p>
+            <ul class="stack"><li>Active Directory</li><li>OpenLDAP</li><li>DNS</li><li>DHCP</li><li>Apache</li><li>Nginx</li><li>IIS</li><li>FTP</li><li>SSH</li><li>NFS</li><li>Samba</li></ul>
+          </article>
+          <article class="skill">
+            <h3>Virtualización</h3>
+            <p>Entornos virtualizados y nociones de contenedores.</p>
+            <ul class="stack"><li>VMware vSphere/ESXi</li><li>Proxmox</li><li>VirtualBox</li><li>KVM</li><li>Docker</li></ul>
+          </article>
+          <article class="skill">
+            <h3>Redes</h3>
+            <p>Diseño y configuración de redes, direccionamiento y diagnóstico.</p>
+            <ul class="stack"><li>Subnetting</li><li>VLAN</li><li>Routing estático y dinámico</li><li>Switching</li><li>IPv4/IPv6</li><li>Wireshark</li></ul>
+          </article>
+          <article class="skill">
+            <h3>Seguridad</h3>
+            <p>Endurecimiento de sistemas, cortafuegos y control de acceso.</p>
+            <ul class="stack"><li>iptables</li><li>UFW</li><li>Cisco ASA/ZPF</li><li>ACL</li><li>VPN</li><li>GPO</li><li>PKI/SSL</li></ul>
+          </article>
+          <article class="skill">
+            <h3>Monitorización</h3>
+            <p>Registro de eventos y supervisión de la disponibilidad de la red.</p>
+            <ul class="stack"><li>Syslog</li><li>Monitorización de infraestructura</li></ul>
+          </article>
+          <article class="skill">
+            <h3>Bases de datos y scripting</h3>
+            <p>Administración de SGBD, SQL y automatización de tareas.</p>
+            <ul class="stack"><li>MySQL</li><li>PostgreSQL</li><li>Oracle</li><li>SQL</li><li>Bash</li><li>PowerShell</li><li>Python</li></ul>
+          </article>
+          <article class="skill">
+            <h3>Hardware y soporte</h3>
+            <p>Montaje, diagnóstico y mantenimiento; atención a usuarios y documentación técnica.</p>
+            <ul class="stack"><li>Helpdesk</li><li>Soporte remoto</li><li>Montaje de equipos</li><li>PRL</li></ul>
+          </article>
+          <article class="skill">
+            <h3>Habilidades personales</h3>
+            <p>Comunicación clara, liderazgo de grupos, empatía, trato al cliente y trabajo en equipo.</p>
+            <ul class="stack"><li>Comunicación</li><li>Liderazgo</li><li>Trabajo en equipo</li><li>Atención al cliente</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICACIONES -->
+    <section class="section section--alt" id="certificaciones">
+      <div class="wrap">
+        <header class="sec-head"><p class="kicker">04 · Certificaciones y cursos</p><h2>Formación complementaria</h2></header>
+        <p class="sec-sub cert-note">Pulsa sobre cualquier certificado para abrirlo a tamaño completo.</p>
+        <div class="certs">
+          <div class="cert-group">
+            <h3><span class="ico">🛡️</span> Ciberseguridad</h3>
+            <div class="cert-grid">
+              <a class="cert" href="docs/certificados/cisco-introduccion-ciberseguridad.pdf" target="_blank" rel="noopener">
+                <img src="img/certificados/cisco-introduccion-ciberseguridad.jpg" alt="Certificado: Introduction to Cybersecurity" width="720" height="489" loading="lazy">
+                <span class="cert__body"><strong>Introduction to Cybersecurity</strong><span>Cisco Networking Academy · DIGITECH</span><span class="cert__date">6 oct 2026</span></span>
+              </a>
+              <a class="cert" href="docs/certificados/cisco-endpoint-security.pdf" target="_blank" rel="noopener">
+                <img src="img/certificados/cisco-endpoint-security.jpg" alt="Certificado: Endpoint Security" width="720" height="489" loading="lazy">
+                <span class="cert__body"><strong>Endpoint Security</strong><span>Cisco Networking Academy</span><span class="cert__date">6 oct 2026</span></span>
+              </a>
+              <a class="cert" href="docs/certificados/cisco-hacker-etico.pdf" target="_blank" rel="noopener">
+                <img src="img/certificados/cisco-hacker-etico.jpg" alt="Certificado: Ethical Hacker" width="720" height="489" loading="lazy">
+                <span class="cert__body"><strong>Ethical Hacker</strong><span>Cisco Networking Academy</span><span class="cert__date">6 oct 2026</span></span>
+              </a>
+              <a class="cert" href="docs/certificados/cisco-defensa-de-la-red.pdf" target="_blank" rel="noopener">
+                <img src="img/certificados/cisco-defensa-de-la-red.jpg" alt="Certificado: Network Defense" width="720" height="489" loading="lazy">
+                <span class="cert__body"><strong>Network Defense</strong><span>Cisco Networking Academy</span><span class="cert__date">9 oct 2026</span></span>
+              </a>
+              <a class="cert" href="docs/certificados/bigschool-ciberseguridad-hacking-etico.jpg" target="_blank" rel="noopener">
+                <img src="img/certificados/bigschool-ciberseguridad-hacking-etico.jpg" alt="Certificado: Curso de Ciberseguridad y Hacking Ético" width="720" height="489" loading="lazy">
+                <span class="cert__body"><strong>Curso de Ciberseguridad y Hacking Ético</strong><span>BIG School</span><span class="cert__date">10 abr 2026 · 6 h</span></span>
+              </a>
+            </div>
+          </div>
+          <div class="cert-group">
+            <h3><span class="ico">🌐</span> Redes · Packet Tracer</h3>
+            <div class="cert-grid">
+              <a class="cert" href="docs/certificados/cisco-packet-tracer-introduccion.pdf" target="_blank" rel="noopener">
+                <img src="img/certificados/cisco-packet-tracer-introduccion.jpg" alt="Certificado: Getting Started with Cisco Packet Tracer" width="720" height="489" loading="lazy">
+                <span class="cert__body"><strong>Getting Started with Cisco Packet Tracer</strong><span>Cisco Networking Academy</span><span class="cert__date">2 oct 2026</span></span>
+              </a>
+              <a class="cert" href="docs/certificados/cisco-packet-tracer-redes.pdf" target="_blank" rel="noopener">
+                <img src="img/certificados/cisco-packet-tracer-redes.jpg" alt="Certificado: Exploring Networking with Cisco Packet Tracer" width="720" height="489" loading="lazy">
+                <span class="cert__body"><strong>Exploring Networking with Cisco Packet Tracer</strong><span>Cisco Networking Academy</span><span class="cert__date">2 oct 2026</span></span>
+              </a>
+              <a class="cert" href="docs/certificados/cisco-packet-tracer-iot.pdf" target="_blank" rel="noopener">
+                <img src="img/certificados/cisco-packet-tracer-iot.jpg" alt="Certificado: Exploring IoT with Cisco Packet Tracer" width="720" height="489" loading="lazy">
+                <span class="cert__body"><strong>Exploring IoT with Cisco Packet Tracer</strong><span>Cisco Networking Academy</span><span class="cert__date">2 oct 2026</span></span>
+              </a>
+            </div>
+          </div>
+          <div class="cert-group">
+            <h3><span class="ico">🤖</span> Inteligencia artificial</h3>
+            <div class="cert-grid">
+              <a class="cert" href="docs/certificados/cisco-introduccion-ia-moderna.pdf" target="_blank" rel="noopener">
+                <img src="img/certificados/cisco-introduccion-ia-moderna.jpg" alt="Certificado: Introduction to Modern AI" width="720" height="489" loading="lazy">
+                <span class="cert__body"><strong>Introduction to Modern AI</strong><span>Cisco Networking Academy</span><span class="cert__date">21 sep 2026</span></span>
+              </a>
+              <a class="cert" href="docs/certificados/bigschool-ia-de-0-a-agentes.jpg" target="_blank" rel="noopener">
+                <img src="img/certificados/bigschool-ia-de-0-a-agentes.jpg" alt="Certificado: Curso de IA: de 0 a Agentes" width="720" height="489" loading="lazy">
+                <span class="cert__body"><strong>Curso de IA: de 0 a Agentes</strong><span>BIG School</span><span class="cert__date">1 jun 2026 · 6 h</span></span>
+              </a>
+              <a class="cert" href="docs/certificados/bigschool-iniciacion-ia.jpg" target="_blank" rel="noopener">
+                <img src="img/certificados/bigschool-iniciacion-ia.jpg" alt="Certificado: Curso de Iniciación a la IA" width="720" height="489" loading="lazy">
+                <span class="cert__body"><strong>Curso de Iniciación a la IA</strong><span>BIG School</span><span class="cert__date">5 sep 2026 · 6 h</span></span>
+              </a>
+            </div>
+          </div>
+          <div class="cert-group">
+            <h3><span class="ico">⚽</span> Otros</h3>
+            <div class="cert-grid">
+              <a class="cert" href="docs/certificados/rfef-uefa-c.jpg" target="_blank" rel="noopener">
+                <img src="img/certificados/rfef-uefa-c.jpg" alt="Diploma UEFA C de entrenador de fútbol" width="720" height="489" loading="lazy">
+                <span class="cert__body"><strong>Curso UEFA C de Entrenador de Fútbol</strong><span>Real Federación Española de Fútbol</span><span class="cert__date">2 sep 2024</span></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAYECTORIA -->
+    <section class="section" id="trayectoria">
+      <div class="wrap">
+        <header class="sec-head"><p class="kicker">05 · Trayectoria</p><h2>Formación y experiencia</h2></header>
+        <div class="two">
+          <div>
+            <h3 class="col-title">Formación</h3>
+            <ol class="timeline">
+              <li><span class="when">2025 – presente</span><h4>Grado Superior en Administración de Sistemas Informáticos en Red (ASIR)</h4><p>Instituto DIGITECH</p></li>
+              <li><span class="when">2023 – 2025</span><h4>Grado Medio en Sistemas Microinformáticos y Redes (SMR)</h4><p>Instituto MEDAC</p></li>
+            </ol>
+          </div>
+          <div>
+            <h3 class="col-title">Experiencia laboral</h3>
+            <ol class="timeline">
+              <li><span class="when">2023 – presente</span><h4>Director técnico deportivo de fútbol</h4><p>A.D. Alhondiga</p></li>
+              <li><span class="when">3 meses</span><h4>Diseñador de páginas web y blog</h4><p>Data System</p></li>
+              <li><span class="when">3 meses</span><h4>Servicio de atención al cliente</h4><p>El Corte Inglés</p></li>
+              <li><span class="when">3 meses</span><h4>Monitor de campamento</h4><p>Campus Alhondiga</p></li>
+              <li><span class="when">1 mes</span><h4>Dependiente de gasolinera</h4><p>Bagarciba S.L.</p></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section section--alt" id="contacto">
+      <div class="wrap contact">
+        <p class="kicker">06 · Contacto</p>
+        <h2>¿Hablamos?</h2>
+        <p class="lead">Si tienes una oportunidad de prácticas, un proyecto o simplemente quieres charlar sobre redes, escríbeme.</p>
+        <div class="cta cta--center">
+          <a class="btn btn--primary" href="mailto:marcos.rdrgz.frndz.2005@gmail.com">marcos.rdrgz.frndz.2005@gmail.com</a>
+          <a class="btn" href="tel:+34603014274">📞 603 014 274</a>
+          <a class="btn" id="linkGithub" href="#" target="_blank" rel="noopener" hidden>GitHub</a>
+          <a class="btn" id="linkLinkedin" href="#" target="_blank" rel="noopener" hidden>LinkedIn</a>
+        </div>
+        <p class="small">Getafe, Madrid</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot__in">
+      <span>© <span id="year">2026</span> Marcos Rodríguez Fernández</span>
+      <a href="#top">Volver arriba ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
